@@ -1,47 +1,112 @@
-﻿
+﻿using System;
+using System.Drawing;
+using System.Runtime.InteropServices;
+using static System.Net.Mime.MediaTypeNames;
 
-using System;
-#region Q1
-class Q1
+namespace Demo_ C__Basics_Session_02_603
 {
-    static void Main()
+internal class Program
+    {
+    static void Main(string[] args)
     {
 
-        int number = 5;
-        Console.WriteLine(number);
+
+    }
+
     }
 }
-#endregion
-#region Q2
-
-class Q2
-{
-    static void Main()
+namespace Demo_ C__Basics_Session_02_603
     {
-        int x = 10;
-        int y = x; 
-        y = 20;    
-
-        Console.WriteLine(x); // Output: 10
-        Console.WriteLine(y); // Output: 20
-    }
-}
-// When assigning one value type to another, a copy of the value is made. Changes to one variable do not affect the other
-#endregion
-
-#region Q3
-
-class Q3
+internal class Progran
 {
-    static void Main()
+static void Main(string[] args)
     {
-        string str1 = "Hello";
-        string str2 = str1; 
-        str2 = "World";     
+        #region Error Types
+        #region Syntax Error - Copilation Error
+        console MriteLine("Hello");
+        iint X;
+        #endregion
+        #endregion
+        #region RunTime Error
 
-        Console.WriteLine( str1);
-        Console.WriteLine( str2); 
+        int X = 5;
+        int y = 6;
+
+Console.WriteLine(X / y);
+        #endregion
+        #region Logical Error
+        int A = 10;
+        int B = 5;
+        Console.WriteLine(Sum(A, B));
+        #endregion
+        #region Warning
+                int X = 8; // 4 Byte
+                Console WriteLine(X)
+        #endregion
+        #region CTS - CLS
+            int X = 5;// Wigyte
+
+        string Name = "test";// 8 Byte
+        Name = "Ali"; // 6 byte
+        #endregion
+        #region Value Type
+
+        int X; // 4 Byte
+               //Console.WriteLine(X);
+        X =4;
+
+        int y =  9; // 4 Byte
+        Y = X; //4
+        X++; 5
+
+Console.WriteLine(X);
+Console WriteLine(y);
+        #endregion
+        #region Reference Type
+        Point P01;
+
+        P01 = new Point();
+
+        Point P02 = new Point(); 
+
+        P02 = P01;
+        P01.X = 10;
+        Console.WriteLine(P02.X);
+        #endregion
+        #region Object
+
+        //Point PO1 = new Point();
+
+        //01.
+object obj01 = new object();
+
+        //obj = 1;
+
+        //obj = Hello;
+
+        //obj = 'A';
+
+        //obj = true ;
+
+        object obj02 = new object();
+
+        Console.WriteLine(obj01.GetHashCode());
+        Console.WriteLine(obj02.GetHashCode());
+        obj02 = obj01;
+        #endregion
+        #region Fractions and Discard
+        //int Nun01 = 1233644444;
+        long Num02 = 12334444444444444;
+double Num03 = 22.2;
+
+        float Num04 = 22.2F;
+
+        decimal Num05 = 22.2m;
+
+        int Num06 = 1.000.060;
+        Console.WriteLine();
+        #endregion
+
     }
 }
-
-#endregion
+}
